@@ -34,6 +34,9 @@
     "dtoSuffix": "DTO",
     "otherModules": [],
     "enableTranslation": false,
-    "blueprints": []
+    "blueprints": [],
+    "herokuAppName": "markcop",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11"
   }
 }
