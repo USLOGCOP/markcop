@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.afk.markcop"
+    },
+    "jhipsterVersion": "6.10.1",
+    "applicationType": "monolith",
+    "baseName": "markcop",
+    "packageName": "com.afk.markcop",
+    "packageFolder": "com/afk/markcop",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZmRhMTRmYTViYzM4OTdmNWYzNjI5Yjc0YjMwNzJkYTExNTcxNDhlOGRkNzM4NWQwM2M5NTQ0ZDBjMWJiNTRlMDE0Y2NmY2M0NjJiZTk5ZWNlYjI0MjYzOGFmMGJiNzYyZmQ3ZjgxMGY5YTdjOWQxNDllMGFhZjYxMTllY2JkNGE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "flatly",
+    "clientThemeVariant": "primary",
+    "creationTimestamp": 1600086149731,
+    "testFrameworks": ["protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
