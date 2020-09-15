@@ -22,6 +22,8 @@
     "@ng-bootstrap/ng-bootstrap": "6.1.0",
     "@ngx-translate/core": "12.1.2",
     "@ngx-translate/http-loader": "5.0.0",
+    "azure-maps-control": "^2.0.30",
+    "azure-maps-rest": "^2.0.5",
     "bootstrap": "4.5.0",
     "bootswatch": "4.5.0",
     "moment": "2.27.0",

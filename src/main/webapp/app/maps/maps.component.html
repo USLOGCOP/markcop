@@ -1,0 +1,35 @@
+<div id="main">
+    <div class="searchPanel">
+        <div>
+            <!-- <input id="searchTbx" type="search" placeholder="Find a store" /> -->
+            <!-- <button id="searchBtn" title="Search"></button> -->
+            <input id="search-input" type="text" placeholder="Search" (keyup)="onKey($event)">
+            <div class="search-icon" type="button"></div>
+        </div>
+    </div>
+
+    <div id="listPanel">
+        <div *ngIf="dataFeatures">
+            <ul class="results">
+                <li *ngFor="let feature of dataFeatures; let i = index" (click)="itemClicked(feature.id)" (mouseenter)="itemHovered(feature.id)">
+                    <div *ngIf="feature.properties.poi && feature.properties.poi.name; else fullAddress">
+                      <div class="title">{{ feature.properties.poi.name }}</div>
+                    </div>
+                    <ng-template #fullAddress>
+                        <div class="title">{{ feature.properties.address.freeformAddress }}</div>
+                    </ng-template>
+                    <div class="info">{{ feature.properties.type }} : {{ feature.properties.address.freeformAddress }}</div>
+                    <div *ngIf="feature.properties.poi">
+                        <div *ngIf="feature.properties.poi.phone">
+                          <div class="info">phone: {{feature.properties.poi.phone}} </div>
+                        </div>
+                        <div *ngIf="feature.properties.poi.url">
+                           <div class="info"><a href="http://{{feature.properties.poi.url}}"> "http://{{feature.properties.poi.url}}" </a></div>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+        </div>
+    </div>
+    <div id="mapContainer"></div>
+</div>
