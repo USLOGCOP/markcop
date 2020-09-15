@@ -29,6 +29,10 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
         {
           path: 'maps',
           component: MapsComponent,
+          data: {
+            authorities: [],
+            pageTitle: 'Maps',
+          },
         },
         ...LAYOUT_ROUTES,
       ],
