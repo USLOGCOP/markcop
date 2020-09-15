@@ -130,8 +130,6 @@ info:
 # ===================================================================
 
 jhipster:
-  clientApp:
-    name: 'markcopApp'
   # By default CORS is disabled. Uncomment to enable.
   cors:
     allowed-origins: '*'
@@ -140,6 +138,8 @@ jhipster:
     exposed-headers: 'Authorization,Link,X-Total-Count'
     allow-credentials: true
     max-age: 1800
+  clientApp:
+    name: 'markcopApp'
   mail:
     from: markcop@localhost
   swagger:
