@@ -11,6 +11,7 @@ eg $input-color: red;
 @import '~bootstrap/scss/bootstrap';
 @import '~bootswatch/dist/flatly/bootswatch';
 
+// Import Azure Maps stylesheets from node_modules
 @import '~azure-maps-control/dist/atlas.min.css';
 
 /* jhipster-needle-scss-add-vendor JHipster will add new css style */
