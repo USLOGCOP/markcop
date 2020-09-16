@@ -3,8 +3,8 @@ import { latLng, Map, MapOptions, tileLayer, Marker, icon } from 'leaflet';
 
 @Component({
   selector: 'jhi-leaf',
-  templateUrl: './leaf.component.html',
-  styleUrls: ['./leaf.component.scss'],
+  templateUrl: './leaflet.component.html',
+  styleUrls: ['./leaflet.component.scss'],
 })
 export class LeafComponent implements OnInit {
   private map: any;

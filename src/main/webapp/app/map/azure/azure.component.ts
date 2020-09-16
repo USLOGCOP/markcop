@@ -4,8 +4,8 @@ import * as atlasService from 'azure-maps-rest';
 
 @Component({
   selector: 'jhi-maps',
-  templateUrl: './maps.component.html',
-  styleUrls: ['./maps.component.scss'],
+  templateUrl: './azure.component.html',
+  styleUrls: ['./azure.component.scss'],
 })
 export class MapsComponent implements OnInit {
   // Azure Active Directory Authentication Client ID

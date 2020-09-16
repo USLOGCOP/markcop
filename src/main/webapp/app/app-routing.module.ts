@@ -4,9 +4,6 @@ import { errorRoute } from './layouts/error/error.route';
 import { navbarRoute } from './layouts/navbar/navbar.route';
 import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 import { Authority } from 'app/shared/constants/authority.constants';
-import { MapsComponent } from './maps/maps.component';
-import { LeafComponent } from './leaf/leaf.component';
-
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
 
 const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
@@ -29,19 +26,7 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
         },
         {
           path: 'maps',
-          component: MapsComponent,
-          data: {
-            authorities: [],
-            pageTitle: 'Azure Map',
-          },
-        },
-        {
-          path: 'leaf',
-          component: LeafComponent,
-          data: {
-            authorities: [],
-            pageTitle: 'Leaflet Map',
-          },
+          loadChildren: () => import('./map/maps.module').then(m => m.MarkcopMapModule),
         },
         ...LAYOUT_ROUTES,
       ],
