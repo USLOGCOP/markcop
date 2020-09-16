@@ -10,5 +10,10 @@
         <router-outlet name="popup"></router-outlet>
     </div>
 
-    <jhi-footer  *ngIf="router.url != '/maps'"></jhi-footer>
+    <!-- TODO: Fix this nasty hack.
+      -- I think we need to create two different 'main' templates (one w/ a footer, one w/o.)
+      -- Then we have to update the current 'main' component to be an empty <router-outlet> tag
+      -- And then we have to associate each module with the appropriate base template.
+      -- We may also want to create a layout module to organize the import of common template elements (navbar, etc) -->
+    <jhi-footer  *ngIf="router.url != '/leaflet' && router.url != '/azure'"></jhi-footer>
 </div>
