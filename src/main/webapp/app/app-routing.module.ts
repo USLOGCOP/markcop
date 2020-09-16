@@ -26,7 +26,7 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
         },
         {
           path: 'maps',
-          loadChildren: () => import('./map/maps.module').then(m => m.MarkcopMapModule),
+          loadChildren: () => import('./maps/map.module').then(m => m.MarkcopMapModule),
         },
         ...LAYOUT_ROUTES,
       ],
