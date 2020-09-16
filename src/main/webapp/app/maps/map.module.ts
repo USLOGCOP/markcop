@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     RouterModule.forChild([
       {
-        path: 'maps',
+        path: 'azure',
         component: MapsComponent,
         data: {
           authorities: [],
@@ -18,7 +18,7 @@ import { RouterModule } from '@angular/router';
         },
       },
       {
-        path: 'leaf',
+        path: 'leaflet',
         component: LeafComponent,
         data: {
           authorities: [],
