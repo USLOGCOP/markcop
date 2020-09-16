@@ -18,7 +18,7 @@ describe('account', () => {
   });
 
   it('should fail to login with bad password', async () => {
-    const expect1 = 'MARKCOP';
+    const expect1 = 'LOGCOP';
     const value1 = await element(by.css('h1')).getText();
     expect(value1).to.eq(expect1);
     signInPage = await navBarPage.getSignInPage();
