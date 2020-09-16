@@ -11,6 +11,7 @@ import { MarkcopMapModule } from './maps/map.module';
 
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { MainComponent } from './layouts/main/main.component';
+import { MapLayoutComponent } from './layouts/map-layout/map-layout.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
@@ -25,12 +26,12 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     MarkcopHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     MarkcopEntityModule,
-    // Module used to organize map-page functionality.
+    // Module used to organize map-page functionality. -MYB 2020
     MarkcopMapModule,
     MarkcopAppRoutingModule,
     LeafletModule,
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
+  declarations: [MainComponent, MapLayoutComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
   bootstrap: [MainComponent],
 })
 export class MarkcopAppModule {}
