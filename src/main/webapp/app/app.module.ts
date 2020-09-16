@@ -14,6 +14,8 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ErrorComponent } from './layouts/error/error.component';
 import { MapsComponent } from './maps/maps.component';
+import { LeafComponent } from './leaf/leaf.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   imports: [
@@ -24,8 +26,9 @@ import { MapsComponent } from './maps/maps.component';
     // jhipster-needle-angular-add-module JHipster will add new module here
     MarkcopEntityModule,
     MarkcopAppRoutingModule,
+    LeafletModule,
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent, MapsComponent],
+  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent, MapsComponent, LeafComponent],
   bootstrap: [MainComponent],
 })
 export class MarkcopAppModule {}

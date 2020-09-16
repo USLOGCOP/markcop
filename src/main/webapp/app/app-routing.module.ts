@@ -5,6 +5,7 @@ import { navbarRoute } from './layouts/navbar/navbar.route';
 import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 import { Authority } from 'app/shared/constants/authority.constants';
 import { MapsComponent } from './maps/maps.component';
+import { LeafComponent } from './leaf/leaf.component';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
 
@@ -31,7 +32,15 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
           component: MapsComponent,
           data: {
             authorities: [],
-            pageTitle: 'Maps',
+            pageTitle: 'Azure Map',
+          },
+        },
+        {
+          path: 'leaf',
+          component: LeafComponent,
+          data: {
+            authorities: [],
+            pageTitle: 'Leaflet Map',
           },
         },
         ...LAYOUT_ROUTES,

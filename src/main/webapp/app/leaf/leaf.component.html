@@ -1,0 +1,13 @@
+<div class="row pb-4">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+        <h5 class="card-title">Feature : LeafLet</h5>
+        <hr>
+        <p class="card-text">An open-source JavaScript library for mobile-friendly interactive maps</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="map" leaflet (leafletMapReady)="onMapReady($event)" [leafletOptions]="leafletOptions">
+        </div>
+    </div>
+</div>
