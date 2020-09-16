@@ -77,7 +77,12 @@
                 errorElm.style.display = "block";
             }
         }
+
+        ((window.gitter = {}).chat = {}).options = {
+            room: 'USLOGCOP/community'
+        };
     </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
     <!-- uncomment this for adding service worker
         <script>
             if ('serviceWorker' in navigator) {
