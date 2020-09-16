@@ -7,7 +7,7 @@ import { MarkcopCoreModule } from 'app/core/core.module';
 import { MarkcopAppRoutingModule } from './app-routing.module';
 import { MarkcopHomeModule } from './home/home.module';
 import { MarkcopEntityModule } from './entities/entity.module';
-import { MarkcopMapModule } from './map/maps.module';
+import { MarkcopMapModule } from './maps/map.module';
 
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { MainComponent } from './layouts/main/main.component';
