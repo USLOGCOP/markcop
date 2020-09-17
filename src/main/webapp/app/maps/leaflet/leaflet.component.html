@@ -7,7 +7,11 @@
         </div>
     </div>
     <div class="container">
-        <div id="map" leaflet (leafletMapReady)="onMapReady($event)" [leafletOptions]="leafletOptions">
+        <!-- <div id="map" leaflet (leafletMapReady)="onMapReady($event)" [leafletOptions]="leafletOptions" [leafletLayersControl]="layersControl"> -->
+        <div id="map" leaflet
+            (leafletMapReady)="onMapReady($event)"
+            [leafletOptions]="leafletOptions"
+            [leafletLayersControl]="layersControl">
         </div>
     </div>
 </div>
