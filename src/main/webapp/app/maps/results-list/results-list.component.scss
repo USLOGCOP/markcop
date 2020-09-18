@@ -1,0 +1,40 @@
+#results-list {
+  padding-top: 10px;
+  height: calc(100vh - 160px);
+  width: 300px;
+  overflow-y: auto;
+}
+
+#results {
+  cursor: pointer;
+}
+
+.results {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  list-style: none;
+}
+.results > li {
+  border-top: 1px dotted #ccc;
+  padding: 10px 5px;
+}
+.results > li:hover {
+  background-color: #f1f2f2;
+  cursor: pointer;
+}
+.results > li > .title {
+  font-family: segoeui-b;
+  line-height: 14pt;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.results > li > .info {
+  width: 100%;
+  line-height: 14pt;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

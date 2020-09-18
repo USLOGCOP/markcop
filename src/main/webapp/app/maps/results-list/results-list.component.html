@@ -1,0 +1,7 @@
+  <div id="results-list">
+        <ul class="results">
+            <li *ngFor="let result of results; let i = index" (click)="selectResult(result)">
+                  <div class="title">{{ result.displayName }}</div>
+            </li>
+          </ul>
+</div>

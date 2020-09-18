@@ -16,6 +16,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ErrorComponent } from './layouts/error/error.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { NominatimService } from './services/nominatim-service';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     MarkcopAppRoutingModule,
     LeafletModule,
   ],
+  providers: [NominatimService],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
   bootstrap: [MainComponent],
 })

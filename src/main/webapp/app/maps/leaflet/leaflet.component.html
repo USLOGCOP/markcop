@@ -1,16 +1,12 @@
-<div class="row pb-4">
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-        <h5 class="card-title">Feature : LeafLet</h5>
-        <hr>
-        <p class="card-text">An open-source JavaScript library for mobile-friendly interactive maps</p>
-        </div>
+<div >
+    <jhi-geocoding (onSearch)="refreshSearchList($event)"></jhi-geocoding>
+    <div id="details-panel">
+        <jhi-results-list [results]="results" (locationSelected)="getAddress($event)"></jhi-results-list>
     </div>
     <div class="container">
-        <!-- <div id="map" leaflet (leafletMapReady)="onMapReady($event)" [leafletOptions]="leafletOptions" [leafletLayersControl]="layersControl"> -->
         <div id="map" leaflet
             (leafletMapReady)="onMapReady($event)"
-            [leafletOptions]="leafletOptions"
+            [leafletOptions]="leafletMapOptions"
             [leafletLayersControl]="layersControl">
         </div>
     </div>
