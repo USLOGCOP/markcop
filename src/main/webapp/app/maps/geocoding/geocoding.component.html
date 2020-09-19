@@ -1,3 +1,5 @@
 <div class="address-lookup">
-    <input type="text" placeholder="Search..." (keyup)="addressLookup($event.target)" (click)="$event.stopPropagation()"/>
+    <!-- This cannot addressLookup() method should not be called more than once per second. -->
+    <!-- Do not change this to just 'keyup' unless we find a better search service. -->
+    <input type="text" placeholder="Search..." (keyup.enter)="addressLookup($event.target)" (click)="$event.stopPropagation()"/>
 </div>
